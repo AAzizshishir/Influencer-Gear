@@ -10,7 +10,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
 :root {
+    /* Font Family */
   --primaryFont: "Poppins", serif;
   --secondaryFont: "Inter", serif;
   --fontForFooter: "Manrope", serif;
+
+  /* Colors */
+  --veryDarkGray: rgb(24, 25, 31);
+  --darkGray: rgb(58, 58, 58);
+  --lightGray: rgb(120,120,120);
+  --gray: rgb(108, 108, 108);
+  --veryLightGray: rgb(217, 219, 225);
+  --whiteColor: rgb(255, 255, 255);
+  --darkColor: rgb(0, 0, 0);
+  --pinkColor: rgb(224, 44, 109);
 }
