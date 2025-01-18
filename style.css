@@ -25,10 +25,10 @@
   --lightGray: rgb(120, 120, 133);
   --gray: rgb(108, 108, 108);
   --ratingGray: rgb(94, 99, 102);
-  /* --bgGray:rgb(170, 170, 170); */
   --veryLightGray: rgb(217, 219, 225);
   --whiteColor: rgb(255, 255, 255);
   --darkColor: rgb(0, 0, 0);
+  --lightDark: rgb(10, 8, 38);
   --pinkColor: rgb(224, 44, 109);
   --orangeColor: rgb(251, 130, 0);
 }
@@ -215,6 +215,39 @@ main section {
   font-size: 0.8rem;
   font-weight: 700;
 }
+/* Products Section Style End */
+
+/* Featured Section Style */
+.featured {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+.featured img {
+  width: 100%;
+}
+.featured .featured-content {
+  max-width: 540px;
+}
+.featured .title {
+  color: var(--lightDark);
+  font-family: var(--primaryFont);
+  font-size: 1.82rem;
+  font-weight: 700;
+}
+.featured .description {
+  color: var(--gray);
+  font-family: var(--primaryFont);
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+.featured .primary-btn{
+  border-radius: 0;
+}
+/* Featured Section Style End */
+
 /* Responsive For Mobile */
 @media screen and (max-width: 576px) {
   /* Nav */
@@ -253,6 +286,13 @@ main section {
   .products .card-container {
     grid-template-columns: 1fr;
   }
+
+  /* Featured */
+  .featured{
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 0 0.7rem;
+  }
 }
 /* Responsive for Tablet */
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -282,5 +322,11 @@ main section {
   /* Products */
   .products .card-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Featured */
+  .featured{
+    gap: 2rem;
+    padding: 0 0.7rem;
   }
 }
