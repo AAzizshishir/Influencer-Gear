@@ -47,6 +47,10 @@ body {
   border: none;
   outline: none;
   transition: all 0.3s;
+  cursor: pointer;
+}
+.primary-btn .arrow{
+  margin-left: 6px;
 }
 .primary-btn:hover {
   transform: scale(1.03);
@@ -72,8 +76,6 @@ body {
 }
 .navlinks ul {
   display: flex;
-}
-.navlinks li {
 }
 .navlinks a {
   text-decoration: none;
