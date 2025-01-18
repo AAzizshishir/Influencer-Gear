@@ -10,7 +10,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
 :root {
-    /* Font Family */
+  /* Font Family */
   --primaryFont: "Poppins", serif;
   --secondaryFont: "Inter", serif;
   --fontForFooter: "Manrope", serif;
@@ -18,10 +18,146 @@
   /* Colors */
   --veryDarkGray: rgb(24, 25, 31);
   --darkGray: rgb(58, 58, 58);
-  --lightGray: rgb(120,120,120);
+  --lightGray: rgb(120, 120, 120);
   --gray: rgb(108, 108, 108);
   --veryLightGray: rgb(217, 219, 225);
   --whiteColor: rgb(255, 255, 255);
   --darkColor: rgb(0, 0, 0);
   --pinkColor: rgb(224, 44, 109);
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  max-width: 100vw;
+  min-height: 100vh;
+}
+/* Shared Style */
+.primary-btn {
+  border-radius: 32px;
+  background: var(--pinkColor);
+  padding: 8px 20px;
+  color: var(--whiteColor);
+  font-family: var(--primaryFont);
+  font-size: 0.8rem;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  transition: all 0.3s;
+}
+.primary-btn:hover {
+  transform: scale(1.03);
+}
+
+/* Header Style */
+.header {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+/* Nav Style */
+.nabvar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.nabvar .brand {
+  color: var(--darkGray);
+  font-family: var(--primaryFont);
+  font-size: 1.26rem;
+  font-weight: 700;
+}
+.navlinks ul {
+  display: flex;
+}
+.navlinks li {
+}
+.navlinks a {
+  text-decoration: none;
+  color: var(--darkGray);
+  padding: 0.5rem 1rem;
+  font-family: var(--primaryFont);
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: background 0.3s;
+  border-radius: 3px;
+}
+.navlinks a:hover {
+  background: var(--veryLightGray);
+}
+
+/* Hero Section */
+.header .hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.header .hero-content {
+  max-width: 450px;
+}
+.hero-content .hero-title {
+  color: var(--darkGray);
+  font-family: var(--primaryFont);
+  font-size: 2.7rem;
+  font-weight: 700;
+}
+.hero-content .description {
+  color: var(--darkGray);
+  font-family: var(--primaryFont);
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 0.8rem 0;
+}
+.hero-image-container {
+  max-width: 400px;
+  background-image: url(./images/Circle\ design.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero-image-container img {
+  width: 100%;
+  height: 100%;
+}
+/* Header Section Style End */
+
+/* Responsive For Mobile */
+@media screen and (max-width: 576px) {
+  .nabvar {
+    flex-direction: column;
+  }
+  .navlinks {
+    margin-top: 1rem;
+  }
+  .hero {
+    flex-direction: column-reverse;
+  }
+  .hero-content {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .hero-image-container img {
+    width: 85%;
+    margin-left: 1.5rem;
+  }
+}
+/* Responsive for Tablet */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .nabvar {
+    flex-direction: column;
+  }
+  .navlinks {
+    margin-top: 1rem;
+  }
+  .hero {
+    flex-direction: column-reverse;
+  }
+  .hero-content {
+    text-align: center;
+    margin-top: 3rem;
+  }
 }
