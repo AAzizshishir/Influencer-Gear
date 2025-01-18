@@ -9,21 +9,28 @@
 /* Font For Footer */
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
+/* Font For Rating */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 :root {
   /* Font Family */
   --primaryFont: "Poppins", serif;
   --secondaryFont: "Inter", serif;
-  --fontForFooter: "Manrope", serif;
+  --fontRating: "Roboto", serif;
+  --fontFooter: "Manrope", serif;
 
   /* Colors */
   --veryDarkGray: rgb(24, 25, 31);
   --darkGray: rgb(58, 58, 58);
-  --lightGray: rgb(120, 120, 120);
+  --lightGray: rgb(120, 120, 133);
   --gray: rgb(108, 108, 108);
+  --ratingGray: rgb(94, 99, 102);
+  /* --bgGray:rgb(170, 170, 170); */
   --veryLightGray: rgb(217, 219, 225);
   --whiteColor: rgb(255, 255, 255);
   --darkColor: rgb(0, 0, 0);
   --pinkColor: rgb(224, 44, 109);
+  --orangeColor: rgb(251, 130, 0);
 }
 * {
   margin: 0;
@@ -147,7 +154,67 @@ main section {
   border-top: 1px solid var(--veryLightGray);
   border-bottom: 1px solid var(--veryLightGray);
 }
+/* Sponsor Section style End */
 
+/* Product Section Style */
+.products {
+  padding: 0 1.4rem;
+  text-align: center;
+}
+.products .title {
+  color: var(--darkGray);
+  font-family: var(--primaryFont);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.products .card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.4rem;
+}
+.products .card {
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+  padding: 12px 8px;
+  border-radius: 4px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+.products .card img {
+  width: 252px;
+  height: 215px;
+}
+.products .product-title {
+  color: var(--veryDarkGray);
+  font-family: var(--primaryFont);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.products .price {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: var(--secondaryFont);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.products i {
+  color: var(--orangeColor);
+  font-size: 0.8rem;
+}
+.products .rating {
+  color: var(--ratingGray);
+  font-family: var(--fontRating);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-left: 8px;
+}
+.products .product-description {
+  color: var(--lightGray);
+  font-family: var(--secondaryFont);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
 /* Responsive For Mobile */
 @media screen and (max-width: 576px) {
   /* Nav */
