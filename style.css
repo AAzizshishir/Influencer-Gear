@@ -215,6 +215,18 @@ main section {
   font-size: 0.8rem;
   font-weight: 700;
 }
+.products .primary-btn{
+  background: transparent;
+  color: var(--pinkColor);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-top: 1rem;
+}
+.products .primary-btn i{
+  color: var(--pinkColor);
+}
 /* Products Section Style End */
 
 /* Featured Section Style */
