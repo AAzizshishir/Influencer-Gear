@@ -215,16 +215,21 @@ main section {
   font-size: 0.8rem;
   font-weight: 700;
 }
-.products .primary-btn{
-  background: transparent;
-  color: var(--pinkColor);
+.products .button-container {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: end;
   margin-top: 1rem;
 }
-.products .primary-btn i{
+.products .primary-btn {
+  background: transparent;
+  color: var(--pinkColor);
+}
+.products .primary-btn:hover {
+  transform: scale(1.15);
+}
+.products .primary-btn i {
   color: var(--pinkColor);
 }
 /* Products Section Style End */
@@ -255,10 +260,44 @@ main section {
   font-weight: 700;
   margin: 1rem 0;
 }
-.featured .primary-btn{
+.featured .primary-btn {
   border-radius: 0;
 }
 /* Featured Section Style End */
+
+/* Footer Style */
+footer {
+  height: 200px;
+  background: var(--lightDark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+footer .footer-title {
+  color: var(--whiteColor);
+  font-family: var(--primaryFont);
+  font-size: 1.26rem;
+  font-weight: 700;
+}
+footer p {
+  color: var(--veryLightGray);
+  font-family: var(--fontFooter);
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.6rem;
+  margin: 0.3rem 0 0.7rem 0;
+}
+footer .footer-links i {
+  margin-right: 12px;
+  font-size: 1.3rem;
+  color: var(--whiteColor);
+  background: var(--darkGray);
+  padding: 10px;
+  border-radius: 50%;
+}
+/* End Footer Style */
 
 /* Responsive For Mobile */
 @media screen and (max-width: 576px) {
@@ -300,7 +339,7 @@ main section {
   }
 
   /* Featured */
-  .featured{
+  .featured {
     flex-direction: column-reverse;
     text-align: center;
     padding: 0 0.7rem;
@@ -337,7 +376,7 @@ main section {
   }
 
   /* Featured */
-  .featured{
+  .featured {
     gap: 2rem;
     padding: 0 0.7rem;
   }
