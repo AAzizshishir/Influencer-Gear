@@ -154,6 +154,12 @@ main section {
   border-top: 1px solid var(--veryLightGray);
   border-bottom: 1px solid var(--veryLightGray);
 }
+.sponsors img {
+  transition: transform 0.3s;
+}
+.sponsors img:hover {
+  transform: scale(1.1);
+}
 /* Sponsor Section style End */
 
 /* Product Section Style */
@@ -296,6 +302,11 @@ footer .footer-links i {
   background: var(--darkGray);
   padding: 10px;
   border-radius: 50%;
+  transition: transform, background 0.3s;
+}
+footer .footer-links i:hover {
+  transform: scale(1.1);
+  background: var(--pinkColor);
 }
 /* End Footer Style */
 
