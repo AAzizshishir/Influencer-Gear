@@ -302,7 +302,7 @@ footer .footer-links i {
   background: var(--darkGray);
   padding: 10px;
   border-radius: 50%;
-  transition: transform, background 0.3s;
+  transition: transform 0.3s, background 0.3s;
 }
 footer .footer-links i:hover {
   transform: scale(1.1);
